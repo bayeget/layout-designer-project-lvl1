@@ -1,1 +1,61 @@
 /** CSS STYLE **/
+body {
+    padding: 0;
+    margin: 0;    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #2a2626;
+}
+
+/* 
+    Цвета текста
+ */
+.text-white {
+    color: #ffffff;
+}
+/* или primary, но конкретно в данном случае текст кажется акцентным */
+.text-accent {
+    color: #fe8a02;
+}
+.text-dark {
+    color: #2a2626;
+}
+.text-dark-translucent {
+    color: #908d8b;
+}
+.a {
+    color: #1085C5;
+}
+
+/* 
+    Фоновые цвета
+ */
+.bg-light {
+    background: #f5f4f0;
+}
+.bg-brown {
+    background: #b09a81;
+}
+.bg-dark {
+    background: #42413c;
+}
+
+.title {
+    line-height: 1.2em;
+}
+.h1 {
+    font-size: 72px;    
+}
+.h2 {
+    font-size: 60px;
+}
+.h3 {
+    font-size: 34px;
+}
+
+.content {
+    max-width: 1110px;
+    text-align: center; /* в дизайне только одна секция по центру выравнена, а в "Основные параметры лендинга" есть это значение*/
+    padding: 100px 0;
+}
