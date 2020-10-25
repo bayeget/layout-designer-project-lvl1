@@ -3,10 +3,18 @@ body {
   margin: 0;
   padding: 0;
 
+  overflow-x: hidden;
+
   color: #2a2626;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -18,7 +26,6 @@ body {
 }
 
 /* или primary, но конкретно в данном случае текст кажется акцентным */
-
 .text-accent {
   color: #fe8a02;
 }
@@ -31,29 +38,44 @@ body {
   color: #908d8b;
 }
 
-.a {
+.text-blue {
   color: #1085c5;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /**
 * ФОновые цвета
 */
+
 .bg-light {
-  background: #f5f4f0;
+  background-color: #f5f4f0;
 }
 
 .bg-brown {
-  background: #b09a81;
+  background-color: #b09a81;
 }
 
 .bg-dark {
-  background: #42413c;
+  background-color: #42413c;
 }
 
 /**
 * Заголовки
 */
+
 .title {
+  position: relative;
+
+  margin: 0;
+
+  font-family: 'Neucha', cursive;
   line-height: 1.2em;
 }
 
@@ -69,10 +91,126 @@ body {
   font-size: 34px;
 }
 
-.content {
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+/**
+* Кнопки
+*/
+
+.btn {
+  display: inline-block;
+  padding: 11px 24px;
+
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  background: #fe8a02;
+
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #ea7600;
+}
+
+/**
+* Отступы
+*/
+
+.mt-36 {
+  margin-top: 36px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.mt-38 {
+  margin-top: 38px;
+}
+
+.container {
+  position: relative;
+
   max-width: 1110px;
+  margin: 0 auto;
   padding: 100px 0;
 
   /* в дизайне только одна секция по центру выравнена, а в "Основные параметры лендинга" есть это значение */
   text-align: center;
+}
+
+.bg::before {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+
+  content: "";
+}
+
+.text-block > .col {
+  flex: 1 1 50%;
+}
+
+.text-block .col:first-child {
+  margin-right: 30px;
+}
+
+/* Стили для хедера */
+
+header {
+  position: relative;
+}
+
+header .container {
+  padding-top: 121px;
+}
+
+header img {
+  position: absolute;
+
+  top: 55px;
+  right: -270px;
+
+  width: auto;
+  height: 525px;
+}
+
+header .title {
+  margin-bottom: 225px;
+}
+
+.section-2 {
+  padding-bottom: 369px;
+}
+
+.video {
+  position: absolute;
+
+  right: 0;
+  left: 0;
+
+  margin: auto;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.section-3 {
+  padding-top: 200px;
 }
