@@ -15,6 +15,17 @@ body * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  line-height: 1.6em;
+}
+
+a {
+  color: inherit;
+}
+
+input {
+  border: 0;
+  outline: none;
 }
 
 /**
@@ -110,7 +121,6 @@ body * {
 
 .h5 {
   font-size: 14px;
-  line-height: 1.6em;
   text-transform: uppercase;
 }
 
@@ -131,6 +141,8 @@ body * {
 */
 
 .btn {
+  position: relative;
+
   display: inline-block;
   padding: 11px 24px;
 
@@ -140,6 +152,10 @@ body * {
   text-decoration: none;
 
   background: #fe8a02;
+
+  border: 0;
+
+  cursor: pointer;
 
   transition: background 0.2s ease-in-out;
 }
@@ -158,6 +174,10 @@ body * {
 
 .mt-38 {
   margin-top: 38px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
 }
 
 .mb-36 {
@@ -207,10 +227,6 @@ body * {
   margin-bottom: 24px;
 }
 
-.row .h4 {
-  margin-bottom: 8px;
-}
-
 .row .img {
   width: 540px;
   height: 405px;
@@ -218,11 +234,11 @@ body * {
 
 /* Стили для хедера */
 
-header .container {
+.header .container {
   padding-top: 121px;
 }
 
-header img {
+.header img {
   position: absolute;
 
   top: 55px;
@@ -232,7 +248,7 @@ header img {
   height: 525px;
 }
 
-header .title {
+.header .title {
   margin-bottom: 225px;
 }
 
@@ -315,4 +331,69 @@ header .title {
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 4px 8px;
+}
+
+.footer .h2 {
+  font-size: 36px;
+}
+
+.subscribe {
+  padding: 40px 75px 40px 50px;
+}
+
+.subscribe .h5 {
+  font-size: 18px;
+  text-transform: none;
+}
+
+.subscribe p {
+  font-size: 12px;
+}
+
+.subscribe .btn {
+  flex: 0 0 70px;
+  height: 50px;
+}
+
+.subscribe .btn::before {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(../img/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+
+  content: '';
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  font-size: 18px;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.feedback {
+  margin-top: 60px;
+}
+
+.feedback p {
+  margin-bottom: 16px;
+
+  color: #000;
+  font-size: 14px;
+}
+
+.feedback p:last-child {
+  margin-bottom: 0;
 }
