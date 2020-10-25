@@ -75,7 +75,7 @@ body * {
 
   margin: 0;
 
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   line-height: 1.2em;
 }
 
@@ -97,6 +97,10 @@ body * {
 
 .flex-between {
   justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 /**
@@ -129,12 +133,12 @@ body * {
   margin-top: 36px;
 }
 
-.mb-36 {
-  margin-bottom: 36px;
-}
-
 .mt-38 {
   margin-top: 38px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
 }
 
 .container {
@@ -156,7 +160,7 @@ body * {
   bottom: 0;
   left: 0;
 
-  background-image: url('../img/bg.png');
+  background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
@@ -211,6 +215,64 @@ header .title {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.section-3 {
+.section-3 .container {
   padding-top: 200px;
+}
+
+.section-3 .h2 {
+  font-size: 52px;
+}
+
+.card {
+  position: relative;
+
+  /* в описание отступ 24px, но в дизайне отступ снизу 38px */
+  padding: 24px;
+}
+
+.card:hover {
+  color: #fff;
+
+  background: #fe8a02;
+
+  transition: background 0.2s ease-in-out;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #fff;
+}
+
+.card a::after {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 1;
+
+  content: "";
+}
+
+.card .title {
+  margin-bottom: 4px;
+}
+
+.card-number {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: "Neucha", cursive;
+  line-height: 1;
+}
+
+.nav > * {
+  flex: 0 0 350px;
+
+  margin-bottom: 20px;
 }
