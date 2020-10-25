@@ -26,8 +26,12 @@ body * {
 }
 
 /* или primary, но конкретно в данном случае текст кажется акцентным */
-.text-accent {
+.text-primary {
   color: #fe8a02;
+}
+
+.text-primary-dark {
+  color: #42413c;
 }
 
 .text-dark {
@@ -66,6 +70,14 @@ body * {
   background-color: #42413c;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
+.box-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
 /**
 * Заголовки
 */
@@ -75,6 +87,7 @@ body * {
 
   margin: 0;
 
+  font-weight: normal;
   font-family: "Neucha", cursive;
   line-height: 1.2em;
 }
@@ -89,6 +102,16 @@ body * {
 
 .h3 {
   font-size: 34px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 14px;
+  line-height: 1.6em;
+  text-transform: uppercase;
 }
 
 .flex {
@@ -152,6 +175,10 @@ body * {
   text-align: center;
 }
 
+.bg {
+  position: relative;
+}
+
 .bg::before {
   position: absolute;
 
@@ -168,19 +195,28 @@ body * {
   content: "";
 }
 
-.text-block > .col {
+.row > .col {
   flex: 1 1 50%;
 }
 
-.text-block .col:first-child {
+.row .col:first-child {
   margin-right: 30px;
 }
 
-/* Стили для хедера */
-
-header {
-  position: relative;
+.row .h2 {
+  margin-bottom: 24px;
 }
+
+.row .h4 {
+  margin-bottom: 8px;
+}
+
+.row .img {
+  width: 540px;
+  height: 405px;
+}
+
+/* Стили для хедера */
 
 header .container {
   padding-top: 121px;
@@ -211,8 +247,6 @@ header .title {
   left: 0;
 
   margin: auto;
-
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .section-3 .container {
@@ -275,4 +309,10 @@ header .title {
   flex: 0 0 350px;
 
   margin-bottom: 20px;
+}
+
+.separator {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 4px 8px;
 }
