@@ -20,4 +20,4 @@ make lint
 
 ## Ссылка на Surge
 
-[Ссылка на Surge](voracious-wash.surge.sh).
+[Ссылка на Surge](http://voracious-wash.surge.sh/).
