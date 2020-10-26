@@ -20,4 +20,4 @@ make lint
 
 ## Ссылка на Surge
 
-[Ссылка на Surge](http://outrageous-position.surge.sh/).
+[Ссылка на Surge](http://handsomely-zebra.surge.sh).
