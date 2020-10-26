@@ -91,7 +91,15 @@ input {
 * Заголовки
 */
 
-.title {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4 {
   position: relative;
 
   margin: 0;
@@ -174,8 +182,16 @@ input {
   margin-top: 38px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 .mb-8 {
   margin-bottom: 8px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .mb-36 {
@@ -221,10 +237,6 @@ input {
   margin-right: 30px;
 }
 
-.row .h2 {
-  margin-bottom: 24px;
-}
-
 .row .img {
   width: 540px;
   height: 405px;
@@ -246,7 +258,7 @@ input {
   height: 525px;
 }
 
-.header .title {
+.header .h1 {
   margin-bottom: 225px;
 }
 
@@ -382,9 +394,6 @@ input {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.feedback {
-  margin-top: 60px;
-}
 
 .feedback p {
   margin-bottom: 16px;
