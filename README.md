@@ -20,4 +20,4 @@ make lint
 
 ## Ссылка на Surge
 
-[Ссылка на Surge](http://handsomely-zebra.surge.sh).
+[Ссылка на Surge](jolly-hair.surge.sh).
